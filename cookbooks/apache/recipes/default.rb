@@ -8,7 +8,7 @@
 
 if node['platform_family'] == "rhel"   		# evaluates the node to see if it is rhel
 	package = "httpd"			# sets the variable package to httpd
-elseif node['platform_family'] == "debian"	# evaluates the node to see if it is debian
+else node['platform_family'] == "debian"	# evaluates the node to see if it is debian
 	package = "apache2"			# sets the variable package to apache2
 end
 
